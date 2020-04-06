@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-vssr
-PKG_VERSION:=1.31
-PKG_RELEASE:=4-20200328
+PKG_VERSION:=1.36
+PKG_RELEASE:=4-20200406
 
 PKG_CONFIG_DEPENDS:= CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks \
 	CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray \
@@ -73,7 +73,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_microsocks
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_dns2socks
 	bool "Include dns2socks"
-	default n 
+	default y 
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_dnscrypt_proxy
 	bool "Include dnscrypt-proxy-full"
@@ -89,7 +89,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_ChinaDNS
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_haproxy
 	bool "Include haproxy"
-	default n
+	default y
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_privoxy
 	bool "Include privoxy http local"
@@ -113,11 +113,11 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_udp2raw-tunnel
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_GoQuiet-client
 	bool "Include GoQuiet-client"
-	default n
+	default y
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_GoQuiet-server
 	bool "Include GoQuiet-server"
-	default n
+	default y
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_v2ray-plugin
 	bool "Include v2ray-plugin"

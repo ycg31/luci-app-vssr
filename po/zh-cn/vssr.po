@@ -872,6 +872,12 @@ msgstr "进程详情："
 msgid "File Viewer"
 msgstr "文件查看器"
 
+msgid "Hello World version update"
+msgstr "Hello World 版本更新"
+
+msgid "update version"
+msgstr "更新版本"
+
 msgid "Enable Authentication"
 msgstr "启用 用户名/密码 认证"
 
